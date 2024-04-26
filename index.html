@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src='index.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">DINESHGAHLOT.COM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">DINESHGAHLOT.COM</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Portfolio
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#">Testimonals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="slides hero-section">
+        <div class="hero-section-slide1">
+            <p class="hero-section-heading">Photography For Adventurous Souls & Rebels At Heart</p>
+            <div class="hero-btn-text-section">
+                <button class="btn btn-dark">read more</button>
+                <p>Lorem Ipsum Dolor sit amit</p>
+            </div>
+            <hr class="hero-hr-tag">
+            <div class="hero-btn-section">
+                <button class="btn btn-dark" onclick='previousSlide()'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                    </svg>
+                </button>
+                <button class="btn btn-dark" onclick="nextSlide()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="hero-section-slide2">
+            <p class="hero-section-heading">Photography For Adventurous Souls & Rebels At Heart</p>
+            <div class="hero-btn-text-section">
+                <button class="btn btn-dark">read more</button>
+                <p>Lorem Ipsum Dolor sit amit</p>
+            </div>
+            <hr class="hero-hr-tag">
+            <div class="hero-btn-section">
+                <button class="btn btn-dark" id="prevButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                    </svg>
+                </button>
+                <button class="btn btn-dark" id="nextButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <img src="https://cdn.pixabay.com/photo/2023/08/15/09/21/camera-8191564_640.jpg" class="img-fluid m-3">
+                <img src="https://butnaturalphotography.com/wp-content/uploads/2018/02/DSC_3226-Edit-1.jpg" class="img-fluid m-3">
+            </div>
+            <div class="col">
+                <img src="https://photographylife.com/wp-content/uploads/2016/06/Dragonfly.jpg" class="img-fluid m-3">
+                <img src="https://i.pinimg.com/originals/65/b7/43/65b743cb3fcf0e32690826bfefc6a63c.jpg" class="img-fluid m-3">
+            </div>
+            <div class="col">
+                <img src="https://webneel.com/daily/sites/default/files/images/daily/06-2017/creative-photography-ideas-by-chiok-jun%20-jie.preview.jpg" class="img-fluid m-3">
+                <img src="https://anegabawa.com/wp-content/uploads/2019/11/64I8436-white-green-dog-outdoor-2-3-4-years-toddler-outdoor-photo-shoot-delhi-anega-bawa-photography-baby-gurgaon.jpg" class="img-fluid m-3">
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex m-5">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <h1 class="mb-5">TESTIMONALS</h1>
+                <p class="mt-5">Photography is both an art and a science, capturing moments, emotions, and stories through the lens of a camera. It's a medium that allows us to freeze time, preserving memories and experiences for generations to come. Whether it's capturing the beauty of nature, the essence of human emotions, or the intricacies of everyday life, photography has the power to evoke powerful feelings and inspire creativity.</p>
+            </div>
+            <div class="col">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="https://cdn.shopify.com/s/files/1/1619/4221/files/Photo_by_Raimond_Klavins_on_Unsplash.jpg?v=1656063779" class="d-block img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://cdn.shopify.com/s/files/1/1619/4221/files/HJ18001_67de4f32-c43e-40a2-ac0f-a85dc5118bd7.jpg?v=1656063708" class="d-block img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://netstorage-tuko.akamaized.net/images/76a935b48593c96a.png" class="d-block img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Testimonal 1</h3>
+    <div class="testimonial-section1">
+        <div>
+            <h1>Do it Your Way.</h1>
+            <h1>Elope in your</h1>
+            <h1>Dream Location</h1>
+        </div>
+    </div>
+
+    <div class="another-section">
+        <h1>Pacific NorthWest Or AnyWhere Beyond</h1>
+        <p>One of the fascinating aspects of photography is its ability to convey a unique perspective. Each photographer brings their own vision and interpretation to their work, resulting in a diverse array of styles and techniques. From breathtaking landscapes to intimate portraits, photography offers endless possibilities for self-expression and exploration.</p>
+        <div>
+            <button class="btn btn-dark">Button</button>
+        </div>
+    </div>
+
+    <div class="slider-section mb-5">
+        <div class="slider-container">
+            <div class="swiper image-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="slider-images" src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV8zNl9waG90b19vZl9idXR0ZXJmbHlfYmVzaWRlX2FfZmxvd2VyX25hdHVyZV9waF9iNjdhMzA4OS1jYTFkLTQzOWUtOGI1Yy0zYzQyZGFjODZlZjJfMS5qcGc.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slider-images"  src="https://www.mordeo.org/download/16093/">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slider-images"  src="https://i.pinimg.com/originals/e7/c9/09/e7c9090fba029ea085c902de03a00ffd.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slider-images"  src="https://mrwallpaper.com/images/high/download-mobile-wallpaper-w142li7pn856j7uy.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slider-images" src="https://www.hdwallpapers.in/download/photographer_sunset_4k-1440x2560.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slider-images" src="https://static.vecteezy.com/system/resources/thumbnails/031/622/689/small/background-for-productgraphy-ai-generated-photo.jpg">
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".image-slider", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },  
+        });
+    </script>
+
+
+    <h1 class="text-center">"Do not Follow where the path may lead.</h1>
+    <h1 class="text-center">Go instead where there is no path and leave a <br>trail."</h1>
+
+    <div class="container">
+        <div class="row m-5">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="https://i.pinimg.com/474x/15/7c/f4/157cf4a2bae50171c690ea741d09fec2.jpg" class="personal-image">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h4 class="mt-5">Behind the Camera Lens</h4>
+                <h1 class="mt-5">Welcome My Friend, My Name is Vanessa</h1>
+                <p class="venessa-dec">Capturing moments through personal photography has been a journey of self-expression and discovery for me. Each click of the shutter is not just about freezing a moment in time but also about encapsulating emotions, stories, and memories. Whether it's the vibrant hues of a sunset, the candid laughter of loved ones, or the intricate details of everyday life, photography allows me to document the world as I see it. </p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

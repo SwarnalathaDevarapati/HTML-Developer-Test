@@ -1,0 +1,106 @@
+:root {
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --background-color: rgb(235, 234, 234);
+    --padding: 30px;
+    --margin: 20px;
+}
+
+.hero-section-slide1,
+.hero-section-slide2 {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--primary-color);
+    padding: var(--padding);
+}
+
+.hero-section-slide1 {
+    background-image: url('https://pangolinphoto.com/wp-content/uploads/2020/05/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp');
+}
+
+.hero-section-slide2 {
+    background-image: url('https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D');
+}
+
+.hero-section-heading {
+    font-size: 40px;
+    font-weight: bold;
+    max-width: 400px;
+    margin-top: 300px;
+}
+
+.hero-btn-text-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-hr-tag {
+    width: 100%;
+    height: 5px;
+}
+
+.hero-btn-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonal-section {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 5rem;
+}
+
+.testimonal-section-carousel-images {
+    max-height: 400px;
+    min-width: 800px;
+}
+
+.testimonial-section1 {
+    background: url('https://wallpapercave.com/wp/wp5842899.jpg');
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-color);
+    margin-bottom: var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.another-section {
+    text-align: center;
+    margin: var(--margin);
+}
+
+.slider-images {
+    height: 400px;
+}
+
+.another-section1 {
+    display: flex;
+    margin: var(--margin);
+}
+
+.personal-image {
+    box-shadow: -50px 50px var(--background-color);
+    margin: var(--margin);
+}
+
+.venessa-dec {
+    margin-left: 70px;
+}
+
+.learn-more-btn {
+    height: 40px;
+    width: 130px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin-left: 70px;
+}
